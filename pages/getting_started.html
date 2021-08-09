@@ -1,0 +1,360 @@
+<!-- Connection Details -->
+<div class="row">
+    <div class="col-sm-4">
+        <h3><span tkey="connectionDetails">Connection Details</span></h3>
+        <div class="card padding-l-10 padding-r-10">
+              <div class="stats">
+                <div><i class="fa fa-cloud"></i> <span tkey="miningPoolHost">Mining Pool Address</span>: 
+                <span id='miningPoolHost'></span>
+        </div>
+                <div><i class="fa fa-cubes"></i> <span tkey="cnAlgorithm">Algorithm</span>: <span id="cnAlgorithm"></span></div>
+            </div>
+        </div>
+
+        <h3><span tkey="miningPorts">Mining Ports</span></h3>
+        <div class="card">
+            <div id="miningPorts" class="table-responsive">
+                <table class="table table-hover table-striped">
+                    <thead>
+                    <tr>
+                        <th class="col1"><span tkey="port">Port</span></th>
+                        <th class="col2"><span tkey="portDiff">Starting Difficulty</span></th>
+                        <th class="col3"><span tkey="description">Description</span></th>
+                        <th class="col3"><span tkey="pooltype">Pool Type</span></th>
+                    </tr>
+                    </thead>
+                    <tbody id="miningPorts_rows">
+                    <tr>
+                        <td class="col1"><span class="miningPort"></span></td>
+                        <td class="col2"><span class="miningPortDiff"></span></td>
+                        <td class="col3"><span class="miningPortDesc"></span></td>
+                        <td class="col4"><span class="miningPoolType"></span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Mining ports -->
+    <div class="col-sm-6">
+        <br> <br> 
+        <iframe width="420" height="236,25" src="https://www.youtube.com/embed/3Bu2PcShNGQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <!-- <h4 class="push-up-15"><span tkey="username">Username</span></h4>
+        <div class="card padding-l-10 padding-r-10">
+            <div class="stats"> 
+                <div> <i class="fa fa-key"></i> <span tkey="usernameDesc">This is your wallet address</span></div>
+                
+                <div id="paymentId"><i class="fa fa-sign-in-alt"></i><span tkey="paymentId">Exchange Payment ID</span>: <span><u tkey="address">address</u>
+                <span class="paymentIdSeparator">.</span>
+                <u tkey="addrPaymentId">paymentID</u></span></div>
+                <div id="fixedDiff"><i class="fa fa-wrench"></i> <span tkey="fixedDiff">Difficulty locking</span>: <span><u tkey="address">address</u><span id="fixedDiffSeparator">+</span><u tkey="addrDiff">diff</u></span></div>
+                <div id="customDonation"><i class="fa fa-hand-holding-heart"></i> <span tkey="customDonation">Custom donation level</span>:
+                    <span><u tkey="address">address</u><span class="customDonationDelimiter">%</span><span><u tkey="donationPercent">donationPercent</u></span><span class="customDonationDelimiter">%</span></span>
+                </div>
+                <div id="usernameMultiple"><i class="fa fa-fast-forward"></i> <span tkey="usernameMultiple">Multiple options</span>: <span>
+                    <u tkey="address">address</u>
+                    <span class="paymentIdSeparator">.</span>
+                    <u tkey="addrPaymentId">paymentID</u>
+                    <span id="fixedDiffSeparator">+</span>
+                    <u tkey="addrDiff">diff</u>
+                    <span class="customDonationDelimiter">%</span>
+                    <u tkey="donationPercent">donationPercent</u>%</span></div>
+            </div>  
+        </div> -->
+     <!-- <h4 class="push-up-15"><span tkey="password">Password</span></h4> -->
+ <!--       <div class="card padding-l-5 padding-r-5">
+            <div class="stats"> -->
+         <!--    <div><i class="fa fa-server"></i> <span tkey="passwordDesc"></span>
+<iframe width="722" height="408" src="https://www.youtube.com/embed/W-x7mTVL-SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div> 
+          <!--  </div> -->
+       <!-- </div> -->
+    </div>
+     <div class='col-sm-4'>
+        <h3>¿Qué hacer?</h3>
+        <div class="card padding-l-10 padding-r-10 community-donations">
+            <div class="stats">
+               <div> Descarga el <code>Instalador PoolDeMineria</code> para empezar y el <code>XLARig</code> o  el <code>SRBMiner</code>. Descomprime ambas cosas en una misma carpeta y sigue los pasos.
+                   <br>
+                   <strong>Para cualquier duda, puedes consultar el vídeo o acceder a nuestro Discord.</strong>
+                   <!--
+                   1. Descarga XLARig o SRB Miner del menú de abajo "Aplicaciones de minería". Debes elegir la última versión y además tu sistema operativo. Extrae los archivos en una carpeta.
+		<br>
+		2. Haz click en "Ver más" y copia y pega el texto que se muestre en el bloc de notas.
+		<br>
+		3. Edita el texto del bloc de notas añadiendo los campos correspondientes:
+		<br>
+		<strong>PORT</strong> lo systituyes por:
+		<br>
+		<code>3333</code>: si tu procesador es más bien antiguo.
+		<br>
+		<code>5555</code>: si tu procesador es de gama media.
+		<br>
+		<code>7777</code>: si tu procesador es realmente potente.
+		<br>
+		<code>8888</code>: si quieres minar solo (no recomendado).
+		<br>
+		<strong>YOUR_SCALA_WALLET_ADDRESS</strong> lo sustituyes por tu dirección de Scala.
+		<br>
+		<strong>YOUR_WORKER_NAME</strong> lo sustituyes por el nombre que decidas para identificar la máquina con la que vas a minar.
+		<br>
+		4. Guarda el archivo como <code>start.bat</code> en la misma carpeta donde hayas extraído el programa para minar. Fíjate en cambiar el tipo de fichero de txt a "Todos los archivos" para que se guarde correctamente.
+		<br>
+		5. Simplemente te falta hacer doble click en start.bat para empezar a minar.
+		<br>
+		6. Puedes añadir en Estadísticas personales tu dirección, cuando pasen unos minutos debería aparecer la información sobre tu minería.
+		<br>
+		Para minar desde el móvil solo debes cambiar la pool por "custom" y escribir abajo <code>scala.pooldemineria.com</code>
+                <br><br>
+		<strong>Si tienes cualquier problema, puedes contactarnos en cualquiera de nuestras redes sociales</strong> -->
+		</div>
+            </div>
+        </div>
+    </div> 
+    
+</div>
+
+<h3><span tkey="instaladorPoolDeMineria">Instalador automático</span></h3>
+<div class="card push-up-5">
+    <div id="miningApps" class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th><i class="fa fa-book"></i> <span tkey="name">Nombre</span></th>
+                <th><i class="fa fa-star"></i> <span tkey="description">Descripción</span></th>
+                <th><i class="fa fa-download"></i> <span tkey="download">Download</span></th>
+            </tr>
+            </thead>
+            <tbody id="miningApps_rows">
+
+        <!-- XMRig -->
+            <tr class="appInfo">
+                <td class="miningAppTitle">Instalador PoolDeMineria</td>
+                <td>Prepara tu minero sencillamente con este instalador automático.</td>
+                <td><a class="btn btn-success" target="_blank" href="https://pooldemineria.com/res/instalador.zip"><span tkey="download">Download</span></a></td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+    </div>
+
+<!-- Mining Applications and Configuration Generator -->
+<h3><span tkey="miningApps">Mining Applications</span></h3>
+
+<!-- Configuration Generator -->
+<!--
+<div class="card padding-15">
+    <p><span tkey="configGeneratorDesc">Generate your custom configuration to mine on our pool</span></p>
+    <div id="configGenerator" class="row">
+        <div class="col-md-12">
+            <div class="input-group push-down-5">
+                <span class="input-group-addon"><i class="fa fa-link"></i></span>
+                <select class="form-control" id="gMiningPort"></select>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <div class="input-group push-down-5">
+                <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                <input class="form-control" id="gAddress" type="text" tplaceholder="addressField" placeholder="Wallet Address" required="required" />
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <div class="input-group push-down-5">
+                <span class="input-group-addon"><i class="fas fa-exchange-alt"></i></span>
+                <input class="form-control" id="gPaymentID" type="text" tplaceholder="paymentIdField" placeholder="Payment ID for exchanges (optional)" />
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <div class="input-group push-down-5">
+                <span class="input-group-addon"><i class="fa fa-server"></i></span>
+                <input class="form-control" id="gWorkerName" tplaceholder="workerNameField" type="text" placeholder="Worker_Name" /> 
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <div class="input-group push-down-5">
+                <span class="input-group-addon"><i class="fa fa-wrench"></i></span>
+                <input class="form-control" id="gDifficulty" type="text" tplaceholder="fixedDiffField" placeholder="Fixed difficulty (optional)" />
+            </div>
+        </div>
+        <div class="col-md-12 push-up-5">
+            <input id="generateConf" type="submit" tvalue="generateConfig" value="Generate configuration" class="btn btn-default"  data-toggle="collapse" href="#xtlstak" />
+        </div>
+    </div>
+</div>
+-->
+<!-- Mining Applications -->
+<div class="card push-up-5">
+    <div id="miningApps" class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th><i class="fa fa-book"></i> <span tkey="appName">App Name</span></th>
+                <th><i class="fa fa-car"></i> <span tkey="appArch">Architecture</span></th>
+                <th><i class="fa fa-star"></i> <span tkey="appDesc">Features</span></th>
+                <th><i class="fa fa-download"></i> <span tkey="download">Download</span></th>
+                <th><i class="fa fa-file-code-o"></i> <span tkey="configuration">Configuration</span></th>
+            </tr>
+            </thead>
+            <tbody id="miningApps_rows">
+        
+
+
+        <!-- XMRig -->
+            <tr class="appInfo">
+                <td class="miningAppTitle">XLARig</td>
+                <td>CPU</td>
+                <td>An XMRig fork with support for latest XLA PoW algorithms.</td>
+                <td><a class="btn btn-success" target="_blank" href="https://github.com/scala-network/XLArig/releases"><span tkey="download">Download</span></a></td>
+                <td><a class="btn btn-default" role="button" data-toggle="collapse" href="#xlarig" aria-expanded="true" aria-controls="collapseExample"><span tkey="showConfig">See more</span></a></td>
+            </tr>
+            <tr class="appConfig">
+                <td colspan="5">
+                    <div class="collapse" id="xlarig">
+        
+<pre>
+<code>
+@echo off
+xlarig.exe --donate-level 0 -o scala.pooldemineria.com:PORT -u YOUR_SCALA_WALLET_ADDRESS -p YOUR_WORKER_NAME -a panthera -k 
+pause
+</code></pre>
+
+                    </div>
+                </td>
+            </tr>
+
+        <!-- XMRig -->
+            <tr class="appInfo">
+                <td class="miningAppTitle">Scala Mobile Miner</td>
+                <td>CPU</td>
+                <td>A mobile application wrapping XLArig to enable mining on Android devices.</td>
+                <td><a class="btn btn-success" target="_blank" href="https://github.com/scala-network/MobileMiner/releases"><span tkey="download">Download</span></a></td>
+            </tr>
+
+
+
+            <tr class="appInfo">
+                <td class="miningAppTitle">SRB Miner</td>
+                <td>CPU</td>
+                <td>CPU & GPU cryptocurrency miner.</td>
+                <td><a class="btn btn-success" target="_blank" href="https://github.com/doktor83/SRBMiner-Multi/releases/"><span tkey="download">Download</span></a></td>
+                <td><a class="btn btn-default" role="button" data-toggle="collapse" href="#xmrigCC" aria-expanded="true" aria-controls="collapseExample"><span tkey="showConfig">See more</span></a></td>
+            </tr>
+            <tr class="appConfig">
+                <td colspan="5">
+                    <div class="collapse" id="xmrigCC">
+        
+<pre>
+<code>
+setx GPU_MAX_HEAP_SIZE 100	
+setx GPU_MAX_USE_SYNC_OBJECTS 1	
+setx GPU_SINGLE_ALLOC_PERCENT 100	
+setx GPU_MAX_ALLOC_PERCENT 100	
+setx GPU_MAX_SINGLE_ALLOC_PERCENT 100	
+setx GPU_ENABLE_LARGE_ALLOCATION 100
+setx GPU_MAX_WORKGROUP_SIZE 1024
+
+@echo off
+cd %~dp0
+cls
+
+SRBMiner-MULTI.exe --algorithm panthera --pool scala.pooldemineria.com:PORT --wallet YOUR_SCALA_WALLET_ADDRESS --password YOUR_WORKER_NAME
+pause
+</code>
+</pre>
+
+                    </div>
+                </td>
+            </tr>
+            
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Javascript -->
+<script>
+// Cleanup mining ports
+var lastPortsJson = '';
+var $miningPorts = $('#miningPorts_rows');
+var miningPortTemplate = $miningPorts.html();
+$miningPorts.empty();
+
+var $miningPortSelect = $('#gMiningPort');
+$miningPortSelect.empty();
+
+// Update current page
+currentPage = {
+    destroy: function(){
+    },
+    update: function(){
+        
+//        document.getElementById("donationAddress").innerHTML = lastStats.config.donations.address;
+        var portsJson = JSON.stringify(lastStats.config.ports);
+        if (lastPortsJson !== portsJson) {
+            lastPortsJson = portsJson;
+            var $miningPortChildren = [];
+            var $miningPortOptions = [];
+            for (var i = 0; i < lastStats.config.ports.length; i++) {
+                var portData = lastStats.config.ports[i];
+                
+                var $portChild = $(miningPortTemplate);
+                $portChild.find('.miningPort').text(portData.port);
+                $portChild.find('.miningPortDiff').text(formatDifficulty(portData.difficulty));
+                $portChild.find('.miningPortDesc').text(portData.desc);
+                $portChild.find('.miningPoolType').text(portData.poolType);
+                $miningPortChildren.push($portChild);
+                $miningPortOptions.push('<option value="'+portData.port+'">'+portData.port+' &ndash; '+portData.desc+'</option>');
+            }
+            
+            $miningPorts.empty().append($miningPortChildren);
+            $miningPortSelect.empty().append($miningPortOptions);   
+            updateTextClasses('examplePort', lastStats.config.ports[0].port.toString());
+        }
+        updateText('poolFee', lastStats.config.fee + '%');
+        if (!lastStats.config.donations.enabled) {
+            $('#customDonation').hide();
+        }
+        updateHtml('miningPoolHost', getPoolHost());
+        updateTextClasses('exampleHost', "mine.scalaproject.io");
+        updateText('paymentIdSeparator', lastStats.config.paymentIdSeparator);
+        updateText('fixedDiffSeparator', lastStats.config.fixedDiffSeparator);
+        if (!lastStats.config.fixedDiffEnabled) $('#fixedDiff').hide();
+
+        var coin = lastStats.config.coin.toLowerCase() || null;
+        // var cnAlgorithm ="cryptonight";
+        // var cnVariant = 8;
+
+        algorithm = 'Panthera';        
+
+        updateText('cnAlgorithm', algorithm);
+    }
+};
+
+/**
+ * Configuration generator
+ **/
+
+$('#generateConf').click(function() {
+    // Mining Port
+    var port = $('#gMiningPort').val();
+    updateTextClasses('examplePort', port);
+
+    // Username
+    var address = $('#gAddress').val().replace(/\s+/g, '').trim();
+    var paymentID = $('#gPaymentID').val().replace(/\s+/g, '').trim();
+    var difficulty = parseInt($('#gDifficulty').val().replace(/\s+/g, '').trim());
+    
+    var login = address ? address : 'YOUR_WALLET_ADDRESS';
+    if (paymentID) login = login + lastStats.config.paymentIdSeparator + paymentID;
+    if (difficulty) login = login + lastStats.config.fixedDiffSeparator + difficulty;
+    updateTextClasses('exampleLogin', login);
+
+    // Password
+    var workerName = $('#gWorkerName').val().replace(/\s+/g, '').trim();
+
+    var password = workerName ? workerName : 'x';
+    updateTextClasses('examplePassword', password);    
+});
+</script>
+
